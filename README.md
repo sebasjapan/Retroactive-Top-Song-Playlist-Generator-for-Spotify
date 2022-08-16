@@ -1,2 +1,5 @@
 # Retroactive-Top-Song-Generator-for-Spotify
-Test
+
+- First Step is to email privacy@spotify.com and request a copy of your extended streaming history and technical log files over the lifetime of your account, and include your username. Take a look at https://support.spotify.com/us/article/understanding-my-data/ for more details. This may take days or even weeks. This is unfortunately the only way to retrieve your data for the lifetime of your account, as the web API is limited in that regard. 
+- At the moment you will have to retrieve your access token and it expires after about an hour, you can do this by going to https://developer.spotify.com/console/post-playlists/ and inputting required information, clicking "Get Token" and allowing it to access required scopes when prompted. You may need to create a developer account with spotify. 
+- After replacing SPOTIFY_CREATE_PLAYLIST_URL, and ACCESS_TOKEN variables with your user specific information, you should be able to follow the prompts and create a playlist with your top songs for any given time period.
