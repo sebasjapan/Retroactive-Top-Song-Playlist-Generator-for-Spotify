@@ -136,6 +136,7 @@ data = json.load(f)
 i = 0
 while True:
     try:
+        # replace filepath with wherever data is stored locally
         f0 = open("CompleteData\endsong_" + str(i + 1) + ".json", encoding='utf-8')
         data0 = json.load(f0)
         data = data + data0
